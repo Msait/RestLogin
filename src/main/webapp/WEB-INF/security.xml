@@ -11,7 +11,6 @@
 
     <import resource="RestLogin-ds.xml"/>
 
-
     <!-- extracts the client credential from the data request -->
     <sec:http pattern="/oauth/token" create-session="stateless"
               authentication-manager-ref="authenticationManager">
@@ -141,11 +140,5 @@
         <property name="accessTokenValiditySeconds" value="120"></property>
         <property name="clientDetailsService" ref="clientDetails"/>
     </bean>
-
-    <!-- A Resource Server serves resources that are protected by the OAuth2
-		token. Spring OAuth provides a Spring Security authentication filter that 
-		implements this protection. -->
-    <!--<oauth2:resource-server id="resourceServerFilter"-->
-    <!--token-services-ref="tokenServices" resource-id="rsourceId" />-->
 
 </beans>
