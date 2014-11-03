@@ -16,13 +16,13 @@ public class UserController {
 	
 	@Autowired UserDao userDao;
 	
-	@PreAuthorize("hasRole('ROLE_ADMIN')")
+//	@PreAuthorize("hasRole('ROLE_ADMIN')")
 	@RequestMapping(value="/user/{id}", method=RequestMethod.GET)
 	public @ResponseBody User getUser(@PathVariable long id) {
 		return userDao.findUserById(id);
 	}
 	
-	@PreAuthorize("hasRole('manager')")
+//	@PreAuthorize("hasRole('manager')")
 	@RequestMapping(value="/userId/{id}", method=RequestMethod.GET)
 	public @ResponseBody User getUserById(@PathVariable long id) {
 		return userDao.findUserById(id);
