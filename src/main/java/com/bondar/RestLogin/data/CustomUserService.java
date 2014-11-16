@@ -1,8 +1,8 @@
-package com.bondar.RestLogin.controller;
+package com.bondar.RestLogin.data;
 
-import com.bondar.RestLogin.data.UserDao;
 import com.bondar.RestLogin.model.Role;
 import com.bondar.RestLogin.model.User;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
